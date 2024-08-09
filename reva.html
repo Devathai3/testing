@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page change</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.list li 
+{
+    list-style-type: none;
+}
+.head h1 
+{
+    text-align: center;
+}
+.navbar ul 
+{
+    display: flex;
+}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>
+    HTML</h1> 
+  <p>
+  HTML (Hypertext Markup Language)</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">New page</a>
+  <a href="#">New page2</a>
+  <a href="#">New Page3</a>
+  <a href="#">New page4</a>
+  <a href="#">New page5</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Main Menu</h2>
+    <h5>How HTML works</h5>
+    <h5>Basic elements of HTML</h5>
+    <h5>Commonly used HTML tags</h5>
+    <h5>How to use and implement HTML</h5>
+    <h5>HTML versions</h5>
+
+    <h2>Basic elements of HTML</h2>
+    <p>HTML elements always have opening tags, content in the middle and closing tags. Attributes can provide additional information about the element and are included in the opening tag. Elements can be described in one of two ways:
+
+        1.Block-level elements start on a new line in the document and take up their own space. Examples of these elements include headings and paragraph tags.
+        2.Inline elements do not start on a new line in the document and only take up necessary space. These elements usually format the contents of block-level elements. Examples of inline elements include hyperlinks and text format tags.
+        </p>
+    <h3>How to use and implement HTML</h3>
+    <p>Because HTML is completely text-based, an HTML file can be edited simply by opening it up in a program such as Notepad++, Vi or Emacs. Any text editor can be used to create or edit an HTML file and, so long as it is named with an .html file extension, any web browser -- such as Chrome or Firefox -- will be capable of displaying the file as a webpage.
+
+        For professional software developers, there are a variety of WYSIWYG editors to develop webpages. Netbeans, IntelliJ, Eclipse and Microsoft's Visual Studio provide WYSIWYG editors as either plugins or as standard components, making it incredibly easy to use and implement HTML.
+    </p>    
+        
+  </div>
+  <div class="main">
+    <h2>How HTML works</h2>
+    <p>HTML is a text file containing specific syntax, file and naming conventions that show the computer and the web server that it is in HTML and should be read as such. By applying these HTML conventions to a text file in virtually any text editor, a user can write and design a basic webpage, and then upload it to the internet.
+
+        The most basic of HTML conventions is the inclusion of a document type declaration at the beginning of the text file. This always comes first in the document, because it is the piece that affirmatively informs a computer that this is an HTML file. The document header typically looks like this: <!DOCTYPE html>. It should always be written that way, without any content inside it or breaking it up. Any content that comes before this declaration will not be recognized as HTML by a computer.
+        
+        Doctypes are not just used for HTML, they can apply to the creation of any document that uses SGML (Standard Generalized Markup Language). SGML is a standard for specifying a specific markup language being used. HTML is one of several markup languages that SGML and doctype declarations apply to.
+        
+        </p>
+     <br>
+    <h2>Commonly used HTML tags</h2>
+    <h5>HTML tags dictate the overall structure of a page and how the elements within them will be displayed in the browser. Commonly used HTML tags include:
+
+        <h1> which describes a top-level heading.
+        <h2> which describes a second-level heading.
+        <p> which describes a paragraph.
+        <table> which describes tabular data.
+        <ol> which describes an ordered list of information.
+        <ul> which describes an unordered list of information.
+        As mentioned, there are opening and closing tags that surround the content they are augmenting. An opening tag looks like this: <p>. A closing tag is the same but contains a backslash in it to indicate that it's the end of the given HTML element. Closing tags look like this: </p>
+        </h5>
+    <h2>HTML versions</h2>
+    <p>The following is a list of HTML versions and the years they were created. Several iterations of each version have been released over time. This list aims to focus on significant iterations.<br>
+
+<br>
+        <h5>HTML 1.0 -- released in 1992 -- had very limited capability and around 20 elements.
+        HTML 2.0 -- released in 1995 -- began to incorporate elements relating to math functions.
+        HTML 3.2 -- released in 1996 -- dropped the math function initiative altogether, and fixed overlap between various proprietary extensions.
+        HTML 4.0 -- released in 1997 -- offered three variations which differed in the number of deprecated elements that were allowed.
+        HTML 4.01 -- released in 1999 -- largely the same as 4.0.
+        HTML 5 -- released in 2014 -- came after a long break in updates because the organization that developed it -- W3C -- was focusing on another, parallel language called XHTML.
+        HTML 5.1 -- released in 2016 -- aimed to more easily accommodate various types of media embedding with new tags.
+        HTML 5.2 -- released in 2017 -- aimed to be equally understandable by humans and computers.
+        HTML 5.3 -- yet to be released -- W3C is collaborating with WHATWG on a new version. The collaboration began in 2019.</h5> </p><br>
+</div>
+</div>
+</body>
+</html>
